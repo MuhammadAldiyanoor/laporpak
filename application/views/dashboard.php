@@ -149,7 +149,7 @@
 							</div>
 						</div> -->
 					</div>
-					<div class="row row-card-no-pd">
+					<!-- <div class="row row-card-no-pd">
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
@@ -159,7 +159,7 @@
 											<button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-angle-down"></span></button>
 											<button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card"><span class="fa fa-sync-alt"></span></button>
 											<button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-times"></span></button>
-										</div>
+										</div> -->
 									</div>
 									<!-- <!-- <p class="card-category">
 									Map of the distribution of users around the world</p>
