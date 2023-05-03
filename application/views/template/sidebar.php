@@ -41,7 +41,7 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item active">
-							<a href="index.html">
+						<a href="<?php echo base_url('dashboard')?>">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 								<span class="badge badge-count">5</span>
@@ -69,27 +69,27 @@
 											</h6>
 										</a>
 							<li>
-										<a href="components/avatars.html">
+							<a href="<?php echo base_url('pengaduanmasuk')?>">
 											<span class="sub-item">Pengaduan Masuk</span>
 										</a>
 									</li>
 									<li>
-										<a href="components/buttons.html">
+									<a href="<?php echo base_url('pengaduanproses')?>">
 											<span class="sub-item">Pengaduan Proses</span>
 										</a>
 									</li>
 									<li>
-										<a href="components/gridsystem.html">
+									<a href="<?php echo base_url('pengaduanditolak')?>">
 											<span class="sub-item">Pengaduan Ditolak</span>
 										</a>
 									</li>
 									<li>
-										<a href="components/panels.html">
+									<a href="<?php echo base_url('pengaduanselesai')?>">
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
 									<li>
-										<a href="components/notifications.html">
+									<a href="<?php echo base_url('tambahuser')?>">
 											<span class="sub-item">Tambah User</span>
 										</a>
 									</li>
@@ -130,7 +130,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="forms/forms.html">
+									<a href="<?php echo base_url('gantipassword')?>">
 											<span class="sub-item">Ganti Password</span>
 										</a>
 									</li>

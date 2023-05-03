@@ -1,11 +1,15 @@
-<!-- end topbar -->
+<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<!-- end topbar -->
 <!-- dashboard inner -->
+<div class="card">
 <div class="midde_cont">
     <div class="container-fluid">
         <div class="row column_title">
             <div class="col-md-12">
                 <div class="page_title">
-                    <h2>DATA PRIBADI</h2>
+                    <h2>Profile</h2>
                 </div>
             </div>
         </div>
@@ -15,10 +19,9 @@
                 <div class="white_shd full margin_bottom_30">
                     <div class="full graph_head">
                         <div class="heading1 margin_0">
-                            <h2>LIST DATA PRIBADI</h2>
                             <td><a href="<?php echo base_url('profil')?>"><button
                                         class="btn btn-primary btn-xs"><i class="fa fa-plus"> Tambah
-                                            Data</i></button></a></td>
+                                            Data Profile</i></button></a></td>
 
                         </div>
                     </div>
@@ -62,7 +65,12 @@
                                                     </td>
                                                 </div>
                                             </div>
+                                            </div>
                                         </div>
                                 </main>
                             </div>
                         </div>
+				</div>
+			</div>
+		</div>
+        
