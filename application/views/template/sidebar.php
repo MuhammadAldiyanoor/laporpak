@@ -125,7 +125,7 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="forms/forms.html">
+										<a href="<?php echo base_url('profil')?>">
 											<span class="sub-item">Profil</span>
 										</a>
 									</li>
