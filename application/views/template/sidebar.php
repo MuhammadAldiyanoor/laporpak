@@ -88,6 +88,7 @@
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
+									<span class="sub-item">Tambah User</span>
 									<li>
 									<a href="<?php echo base_url('tambahuser')?>">
 											<span class="sub-item">Tambah User</span>
@@ -139,12 +140,12 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#tables">
+						<a href="<?php echo base_url('generatelaporan')?>">
 								<i class="fas fa-table"></i>
 								<p>Generate Laporan</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="tables">
+							<!-- <div class="collapse" id="tables">
 								<ul class="nav nav-collapse">
 									<li>
 										<a href="tables/tables.html">
@@ -157,15 +158,15 @@
 										</a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#maps">
+						<a href="<?php echo base_url('logout')?>">
 								<i class="fas fa-map-marker-alt"></i>
 								<p>Log Out</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="maps">
+							<!-- <div class="collapse" id="maps">
 								<ul class="nav nav-collapse">
 									<li>
 										<a href="maps/googlemaps.html">
@@ -183,15 +184,15 @@
 										</a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 						</li>
-						<!-- <li class="nav-item">
-							<a data-toggle="collapse" href="#charts">
+						<li class="nav-item">
+						<a href="<?php echo base_url('tambahpengaduan')?>">
 								<i class="far fa-chart-bar"></i>
-								<p>Charts</p>
+								<p>Tambah Pengaduan</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="charts">
+							<!-- <div class="collapse" id="charts">
 								<ul class="nav nav-collapse">
 									<li>
 										<a href="charts/charts.html">
@@ -204,9 +205,9 @@
 										</a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 						</li>
-						 -->
+						
 						<!-- <li class="nav-item">
 							<a href="widgets.html">
 								<i class="fas fa-desktop"></i>

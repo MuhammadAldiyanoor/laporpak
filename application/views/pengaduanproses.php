@@ -2,65 +2,39 @@
 			<div class="content">
 				<div class="page-inner">
 					<!-- end topbar -->
-<div class="card">
-    <h5 class="card-header">Pengaduan Proses</h5>
-    <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Kode Spare Part</th>
-                    <th>Brand</th>
-                    <th>Stok</th>
-                    <th>Satuan</th>
-                    <th>Keperluan</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody class="table-border-bottom-0">
-                <tr>
-                    <td>1.</td>
-                    <td>Albert Cook</td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                    <td>
-                    <td>
-                        <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
-                                    Edit</a>
-                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i>
-                                    Delete</a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>Katak Bizer</td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                    <td>
-                    <td>
-                        <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
-                                    Edit</a>
-                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i>
-                                    Delete</a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
+<table id="example" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name Pelapor</th>
+                <th>Isi Laporan</th>
+                <th>Telp</th>
+                <th>Tanggal Pengaduan</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td></td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+            </tr>
+           
+    </table>
+
+    <script>
+        $(document).ready(function () {
+        $('#example').DataTable();
+    });
+    </script>
+		<a href="#" class="btn btn-warning">Lihat Detail</a>
+	</div>
 </div>

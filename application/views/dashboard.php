@@ -126,7 +126,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<!-- <div class="col-md-4">
 							<div class="card card-secondary">
 								<div class="card-header">
 									<div class="card-title">Daily Sales</div>
@@ -139,7 +139,7 @@
 									<div class="pull-in">
 										<canvas id="dailySalesChart"></canvas>
 									</div>
-								</div>
+								</div> -->
 							</div>
 							<!-- <div class="card card-info bg-info-gradient">
 								<div class="card-body">
@@ -268,13 +268,13 @@
 							</div>
 						</div>
 					</div> --> -->
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-4">
 							<div class="card">
 								<div class="card-header">
 									<div class="card-title">Top Products</div>
-								</div>
-								<div class="card-body pb-0">
+								</div> -->
+								<!-- <div class="card-body pb-0">
 									<div class="d-flex">
 										<div class="avatar">
 											<img src="<?= base_url();?>assets/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
@@ -282,8 +282,8 @@
 										<div class="flex-1 pt-1 ml-2">
 											<h5 class="fw-bold mb-1">CSS</h5>
 											<small class="text-muted">Cascading Style Sheets</small>
-										</div>
-										<div class="d-flex ml-auto align-items-center">
+										</div> -->
+										<!-- <div class="d-flex ml-auto align-items-center">
 											<h3 class="text-info fw-bold">+$17</h3>
 										</div>
 									</div>
@@ -298,9 +298,9 @@
 										</div>
 										<div class="d-flex ml-auto align-items-center">
 											<h3 class="text-info fw-bold">+$300</h3>
-										</div>
+										</div> -->
 									</div>
-									<div class="separator-dashed"></div>
+									<!-- <div class="separator-dashed"></div>
 									<div class="d-flex">
 										<div class="avatar">
 											<img src="<?= base_url();?>assets/img/logoproduct3.svg" alt="..." class="avatar-img rounded-circle">
@@ -311,16 +311,16 @@
 										</div>
 										<div class="d-flex ml-auto align-items-center">
 											<h3 class="text-info fw-bold">+$350</h3>
-										</div>
+										</div> -->
 									</div>
-									<div class="separator-dashed"></div>
+									<!-- <div class="separator-dashed"></div>
 									<div class="pull-in">
 										<canvas id="topProductsChart"></canvas>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
-						<div class="col-md-4">
+						<!-- <div class="col-md-4">
 							<div class="card">
 								<div class="card-body">
 									<div class="card-title fw-mediumbold">Suggested People</div>
@@ -332,8 +332,8 @@
 											<div class="info-user ml-3">
 												<div class="username">Jimmy Denis</div>
 												<div class="status">Graphic Designer</div>
-											</div>
-											<button class="btn btn-icon btn-primary btn-round btn-sm">
+											</div> -->
+											<!-- <button class="btn btn-icon btn-primary btn-round btn-sm">
 												<i class="fa fa-plus"></i>
 											</button>
 										</div>
@@ -384,8 +384,8 @@
 											<button class="btn btn-icon btn-primary btn-round btn-sm">
 												<i class="fa fa-plus"></i>
 											</button>
-										</div>
-										<div class="item-list">
+										</div> -->
+										<!-- <div class="item-list">
 											<div class="avatar">
 												<img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
@@ -399,9 +399,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
-						<div class="col-md-4">
+						<!-- <div class="col-md-4">
 							<div class="card card-primary bg-primary-gradient bubble-shadow">
 								<div class="card-body">
 									<h4 class="mt-3 b-b1 pb-2 mb-4 fw-bold">Active user right now</h4>
@@ -414,22 +414,22 @@
 										<li class="d-flex justify-content-between pb-1 pt-1"><small>/product/azzara/demo.html</small> <span>10</span></li>
 									</ul>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-6">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Feed Activity</div>
-								</div>
+									<div class="card-title">Feed Activity</div> -->
+								<!-- </div>
 								<div class="card-body">
 									<ol class="activity-feed">
 										<li class="feed-item feed-item-secondary">
 											<time class="date" datetime="9-25">Sep 25</time>
 											<span class="text">Responded to need <a href="#">"Volunteer opportunity"</a></span>
-										</li>
-										<li class="feed-item feed-item-success">
+										</li> -->
+										<!-- <li class="feed-item feed-item-success">
 											<time class="date" datetime="9-24">Sep 24</time>
 											<span class="text">Added an interest <a href="#">"Volunteer Activities"</a></span>
 										</li>
@@ -448,7 +448,7 @@
 										<li class="feed-item">
 											<time class="date" datetime="9-17">Sep 17</time>
 											<span class="text">Attending the event <a href="single-event.php">"Some New Event"</a></span>
-										</li>
+										</li> -->
 									</ol>
 								</div>
 							</div>
@@ -548,7 +548,7 @@
 		</div>
 		
 		<!-- Custom template | don't include it in your project! -->
-		<div class="custom-template">
+		<!-- <div class="custom-template">
 			<div class="title">Settings</div>
 			<div class="custom-content">
 				<div class="switcher">
@@ -576,7 +576,7 @@
 			<div class="custom-toggle">
 				<i class="flaticon-settings"></i>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Custom template -->
 	</div>
 </div>
