@@ -453,6 +453,10 @@
 								</div>
 							</div>
 						</div>
+						<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<!-- end topbar -->
 						<div class="col-md-6">
 							<div class="card">
 								<div class="card-header">
