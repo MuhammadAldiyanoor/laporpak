@@ -35,6 +35,7 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="#" class="btn btn-warning">Lihat Detail</a>
+		<a href="<?php echo base_url('lihatdetail')?>"
+         href="#" class="btn btn-warning">Lihat Detail</a>
 	</div>
 </div>

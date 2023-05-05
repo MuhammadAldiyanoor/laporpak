@@ -83,9 +83,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="about.html" class="nav-item nav-link">Profil</a>
+                        <a href="service.html" class="nav-item nav-link">Berita</a>
+                        <a href="project.html" class="nav-item nav-link">Layanan</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
@@ -99,7 +99,8 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Login</a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Isi Form Pengaduan</a>
                     </div>
                 </div>
             </nav>
@@ -121,7 +122,7 @@
                                     <p class="fs-4 text-white animated slideInRight">Selamat Datang Di
                                         <strong>Lapor pak</strong>
                                     </p>
-                                    <h4 class="display-1 text-white mb-4 animated slideInRight">Aplikasi Sistem Informasi Pengaduan Masyarakat</h4>
+                                    <h4 class="display-1 text-white mb-4 animated slideInRight">Aplikasi Sistem Informasi Pengaduan Masyarakat Desa Tambang Ulang</h4>
                                     <a href=""
                                         class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore
                                         More</a>
@@ -136,10 +137,9 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>GrowMark</strong>
+                                    <p class="fs-4 text-white animated slideInLeft">Selamat Datang Di <strong>Lapor Pak</strong>
                                     </p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
-                                        Business</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Aplikasi Sistem Informasi Pengaduan Masyarakat Desa Tambang Ulang</h1>
                                     <a href=""
                                         class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore
                                         More</a>
@@ -171,7 +171,7 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-1.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">Award Winning</h5>
+                        <h5 class="mb-3">Sejarah</h5>
                         <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-2.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">Professional Staff</h5>
+                        <h5 class="mb-3">Visi</h5>
                         <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-3.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">Fair Prices</h5>
+                        <h5 class="mb-3">Misi</h5>
                         <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
                     </div>
                 </div>
@@ -223,9 +223,8 @@
                 <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded-top p-5 mt-lg-5">
                         <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <h1 class="display-6 mb-4">The Best Marketing Agency to Improve Your Business</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                            diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                        <h1 class="display-6 mb-4">Fasilitas</h1>
+                        <p class="mb-4">Ambulans Desa adalah kendaraan ambulans milik pemerintah desa yang dilengkapi dengan peralatan medis untuk mengangkut orang sakit atau korban kecelakaan yang disiapkan atau disiagakan di desa.</p>
                         <div class="row g-5 pt-2 mb-5">
                             <div class="col-sm-6">
                                 <img class="img-fluid mb-4" src="<?= base_url()?>assets/landing/img/icon/icon-5.png" alt="">
