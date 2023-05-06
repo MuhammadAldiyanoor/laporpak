@@ -14,7 +14,7 @@
                 <th>Isi Laporan</th>
                 <th>Telp</th>
                 <th>Tanggal Pengaduan</th>
-                <th>Start date</th>
+                <th>Status</th>
                 <th>Salary</th>
             </tr>
         </thead>
@@ -35,6 +35,7 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="#" class="btn btn-warning">Lihat Detail</a>
+		<a href="<?php echo base_url('lihatdetailproses')?>"
+         href="#" class="btn btn-warning">Lihat Detail</a>
 	</div>
 </div>

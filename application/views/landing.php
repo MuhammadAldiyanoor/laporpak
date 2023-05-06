@@ -99,8 +99,8 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Login</a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Isi Form Pengaduan</a>
+                        <a href="<?php echo base_url('Login') ?>" class="btn btn-primary rounded-pill py-2 px-3">Login</a>
+                        <a href="<?= base_url('tambahpengaduan') ?>" class="btn btn-primary rounded-pill py-2 px-3">Isi Form Pengaduan</a>
                     </div>
                 </div>
             </nav>
@@ -172,7 +172,16 @@
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-1.png" alt="Icon">
                         </div>
                         <h5 class="mb-3">Sejarah</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <p class="mb-0">Pada jaman dahulu di Desa Juwiring belum ada yang namanya balai desa.
+
+Masyarakatnya juga belum mempunyai pemimipin atau belum terbentuknya pemerintahan
+
+desa. Ketika mengadakan sebuah pertemuan masyarakat akan berkumpul di salah satu rumah milik warga. Karena Desa Juwiring tidak memiliki lahan milik desa. 
+
+Harta kekayaan  desa berupa sawah yang letaknya jauh dari pemukiman warga. Jadi, apabila dibangun  sebuah balai desa maka warga akan kejauhan untuk menjangkaunya
+
+
+</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
@@ -181,7 +190,7 @@
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-2.png" alt="Icon">
                         </div>
                         <h5 class="mb-3">Visi</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <p class="mb-0">“DENGAN SEMANGAT PERSAUDARAAN, GOTONG ROYONG DAN AKHLAK MULIA GUNA MEWUJUDKAN DESA LANGKAP YANG LUAR BIASA”.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -190,7 +199,13 @@
                             <img class="img-fluid" src="<?= base_url()?>assets/landing/img/icon/icon-3.png" alt="Icon">
                         </div>
                         <h5 class="mb-3">Misi</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <p class="mb-0">Melanjutkan program yang telah dilaksanakan dan memelihara program-program yang sudah dilaksanakan oleh pemerintah Desa Langkap periode yang lalu sesuai dengan fungsinya.
+
+Menggali, memberdayakan serta memaksimalkan semua potensi yang ada di masyarakat, meliputi :
+
+Pemberdayaan Sumber Daya Manusia (SDM)
+Pemberdayaan Sumber Daya Alam (SDA)
+Pemberdayaan Ekonomi Kerakyatan</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -269,7 +284,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium text-primary">Our Services</p>
@@ -379,13 +394,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- Service End -->
 
 
     <!-- Project Start -->
-    <div class="container-xxl pt-5">
+    <!-- <div class="container-xxl pt-5">
         <div class="container">
             <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
@@ -453,12 +468,11 @@
                         <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Project End -->
-
-
+    
     <!-- Quote Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -528,7 +542,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium text-primary">Our Team</p>
@@ -587,14 +601,14 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl pt-5">
+    <!-- <div class="container-xxl pt-5">
         <div class="container">
             <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
@@ -630,14 +644,14 @@
                     <h5>Client Name</h5>
                     <span class="text-primary">Profession</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Testimonial End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -683,7 +697,7 @@
                             class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Footer End -->

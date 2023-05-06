@@ -226,7 +226,7 @@
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">Account Setting</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Logout</a>
+									<a class="dropdown-item" href="<?= base_url('landing') ?>">Logout</a>
 								</li>
 							</ul>
 						</li>

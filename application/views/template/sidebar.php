@@ -142,7 +142,7 @@
 						<li class="nav-item">
 						<a href="<?php echo base_url('generatelaporan')?>">
 								<i class="fas fa-table"></i>
-								<p>Generate Laporan</p>
+								<p>Hasil Laporan</p>
 								<span class="caret"></span>
 							</a>
 							<!-- <div class="collapse" id="tables">

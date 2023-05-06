@@ -4,10 +4,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Login</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="<?php echo base_url('../assets/img/icon.ico')?>" type="image/x-icon"/>
+	<link rel="icon" href="<?php echo base_url('assets/img/icon.ico')?>" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
-	<script src="<?php echo base_url('../assets/js/plugin/webfont/webfont.min.j')?>s"></script>
+	<script src="<?php echo base_url('assets/js/plugin/webfont/webfont.min.j')?>s"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Open+Sans:300,400,600,700"]},
@@ -19,8 +19,8 @@
 	</script>
 	
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="<?php echo base_url('../assets/css/bootstrap.min.css')?>">
-	<link rel="stylesheet" href="<?php echo base_url('../assets/css/azzara.min.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/azzara.min.css')?>">
 </head>
 <body class="login">
 	<div class="wrapper wrapper-login">
@@ -47,7 +47,7 @@
 					<a href="#" class="link float-right">Forget Password ?</a>
 				</div>
 				<div class="form-action mb-3">
-					<a href="#" class="btn btn-primary btn-rounded btn-login">Sign In</a>
+					<a href="<?= base_url('dashboard') ?>" class="btn btn-primary btn-rounded btn-login">Sign In</a>
 				</div>
 				<div class="login-account">
 					<span class="msg">Don't have an account yet ?</span>
@@ -94,10 +94,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="<?php echo base_url('..assets/js/core/jquery.3.2.1.min.js')?>"></script>
-	<script src="<?php echo base_url('../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')?>"></script>
-	<script src="<?php echo base_url('../assets/js/core/popper.min.js')?>"></script>
-	<script src="<?php echo base_url('../assets/js/core/bootstrap.min.js')?>"></script>
-	<script src="<?php echo base_url('../assets/js/ready.js')?>"></script>
+	<script src="<?php echo base_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/js/core/popper.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/js/core/bootstrap.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/js/ready.js')?>"></script>
 </body>
 </html>
