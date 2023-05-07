@@ -26,6 +26,7 @@
 	<div class="wrapper wrapper-login">
 		<div class="container container-login animated fadeIn">
 			<h3 class="text-center">Sign In To Admin</h3>
+			<form method="POST" action="<?php echo base_url('login/auth') ?>">
 			<div class="login-form">
 				<div class="form-group form-floating-label">
 					<input id="username" name="username" type="text" class="form-control input-border-bottom" required>
@@ -47,13 +48,14 @@
 					<a href="#" class="link float-right">Forget Password ?</a>
 				</div>
 				<div class="form-action mb-3">
-					<a href="<?= base_url('dashboard') ?>" class="btn btn-primary btn-rounded btn-login">Sign In</a>
+					<button type="submit" name="submit" class="btn btn-primary btn-rounded btn-login">Login</button>
 				</div>
 				<div class="login-account">
 					<span class="msg">Don't have an account yet ?</span>
 					<a href="#" id="show-signup" class="link">Sign Up</a>
 				</div>
 			</div>
+			</form>
 		</div>
 
 		<div class="container container-signup animated fadeIn">

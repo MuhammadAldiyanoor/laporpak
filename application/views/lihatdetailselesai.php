@@ -37,7 +37,7 @@
     </script>
 		<a href="<?php echo base_url('lihatdetailproses')?>"
          href="#" class="btn btn-warning">Lihat Detail</a>
-		 <a href="<?php echo base_url('pengaduanproses')?>"><button class="btn btn-danger btn-"><i
+         <a href="<?php echo base_url('pengaduanselesai')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow-circle-left">
                             </i> Back</button></a>
 	</div>

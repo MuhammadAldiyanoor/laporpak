@@ -10,12 +10,15 @@
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Name Pelapor</th>
-                <th>Isi Laporan</th>
-                <th>Telp</th>
+                <th>Nama Pelapor</th>
+                <th>NIK</th>
+                <th>Alamat Pelapor</th>
+                <th>RT/RW</th>
                 <th>Tanggal Pengaduan</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Lokasi</th>
+                <th>Jenis Pengaduan</th>
+                <th>Isi Laporan</th>
+                <th>Foto</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +26,9 @@
                 <td>Tiger Nixon</td>
                 <td>System Architect</td>
                 <td>Edinburgh</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td>2011-04-25</td>
                 <td>$320,800</td>
@@ -35,7 +41,10 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="<?php echo base_url('lihatdetail')?>"
+		<a href="<?php echo base_url('lihatdetailmasuk')?>"
          href="#" class="btn btn-warning">Lihat Detail</a>
+         <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
+                                class="fa fa-arrow">
+                            </i>Kembali</button></a>
 	</div>
 </div>

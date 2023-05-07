@@ -37,5 +37,8 @@
     </script>
 		<a href="<?php echo base_url('lihatdetailproses')?>"
          href="#" class="btn btn-warning">Lihat Detail</a>
+         <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
+                                class="fa fa-arrow">
+                            </i>Kembali</button></a>
 	</div>
 </div>

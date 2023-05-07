@@ -29,12 +29,11 @@
 			<div class="content">
 				<div class="page-inner">
 					<!-- end topbar -->
-                    <h1>Tambah Pengaduan</h1>
-<form>
-	<div class="form-group">
-		<label for="exampleInputEmail1">Nama Pelapor</label>
-		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama">
-	</div>
+                    
+					<div class="card">
+					<h1 class="card-header">Tambah Pengaduan</h1>
+	<div class="card-body">
+	<form>
     <div class="form-group">
 		<label for="exampleInputEmail1">NIK</label>
 		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK">
@@ -64,7 +63,7 @@
 </form>
 
                     <h4>Isi Laporan</h4>
-<textarea name="" id="" cols="143" rows="10"></textarea>
+<textarea name="" id="" cols="190" rows="10"></textarea>
 <div class="form-group">
 <label for="exampleInputEmail1">Upload Foto</label>
 	<div class="input-group mb-3">
@@ -75,6 +74,9 @@
 	</div>
     <button type="submit" class="btn btn-primary">Tambah</button>
 </form>
+	</div>
+	</div>
+
 <!--   Core JS Files   -->
 <script src="<?= base_url();?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?= base_url();?>assets/js/core/popper.min.js"></script>

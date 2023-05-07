@@ -185,13 +185,6 @@
 									</li>
 								</ul>
 							</div> -->
-						</li>
-						<li class="nav-item">
-						<a href="<?php echo base_url('tambahpengaduan')?>">
-								<i class="far fa-chart-bar"></i>
-								<p>Tambah Pengaduan</p>
-								<span class="caret"></span>
-							</a>
 							<!-- <div class="collapse" id="charts">
 								<ul class="nav nav-collapse">
 									<li>
