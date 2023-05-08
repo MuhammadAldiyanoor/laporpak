@@ -36,7 +36,9 @@
 	<form>
     <div class="form-group">
 		<label for="exampleInputEmail1">NIK</label>
-		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK">
+		<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="id_pengaduan">
+		<!-- <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="id_user"> -->
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="nik">
 	</div>
     <div class="form-group">
 		<label for="exampleInputEmail1">Alamat Pelapor</label>
