@@ -33,43 +33,40 @@
 					<div class="card">
 					<h1 class="card-header">Tambah Pengaduan</h1>
 	<div class="card-body">
-	<form>
+	<form action="<?php echo base_url('landing/tambah_data_aksi')?>" method="POST">
     <div class="form-group">
+		<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" name="id_pengaduan">
 		<label for="exampleInputEmail1">NIK</label>
-		<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="id_pengaduan">
-		<!-- <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="id_user"> -->
 		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="nik">
 	</div>
     <div class="form-group">
 		<label for="exampleInputEmail1">Alamat Pelapor</label>
-		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Alamat">
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Alamat" name="alamat_pelapor">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">RT/RW</label>
-		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan RT/RW">
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan RT/RW" name="id_rw">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Tanggal Pengaduan</label>
-		<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal">
+		<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal" name="tanggal">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Lokasi</label>
-		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan Lokasi">
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Lokasi" name="lokasi">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Jenis Pengaduan</label>
-		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Pilih">
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="id_kategori_pengaduan">
 	</div>
 	<div class="form-check">
 		<input type="checkbox" class="form-check-input" id="exampleCheck1">
-</form>
-
                     <h4>Isi Laporan</h4>
-<textarea name="" id="" cols="190" rows="10"></textarea>
-<div class="form-group">
-<label for="exampleInputEmail1">Upload Foto</label>
-	<div class="input-group mb-3">
-		<input type="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					<textarea name="isi_laporan" id="" cols="190" rows="10"></textarea>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Upload Foto</label>
+						<div class="input-group mb-3">
+							<input type="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" name="foto">
 		<div class="input-group-append">
 			<span class="input-group-text" id="basic-addon2">Browse</span>
 		</div>

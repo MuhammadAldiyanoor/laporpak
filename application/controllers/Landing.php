@@ -44,7 +44,7 @@ class Landing extends CI_Controller {
 				'foto'					=> $foto,
 			);
 
-			$this->M_harga->insert_data($data, 'pengaduan');
+			$this->M_pengaduan->insert_data($data, 'pengaduan');
 			$this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
 			<strong>Data berhasil ditambahkan !</strong>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
