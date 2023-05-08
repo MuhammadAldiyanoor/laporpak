@@ -10,24 +10,31 @@
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Name Pelapor</th>
-                <th>Isi Laporan</th>
-                <th>Telp</th>
+                <th>Nama Pelapor</th>
+                <th>NIK</th>
+                <th>Alamat Pelapor</th>
+                <th>RT/RW</th>
                 <th>Tanggal Pengaduan</th>
-                <th>Status</th>
-                <th>Salary</th>
+                <th>Lokasi</th>
+                <th>Jenis Pengaduan</th>
+                <th>Isi Laporan</th>
+                <th>Foto</th>
             </tr>
         </thead>
         <tbody>
+            <?php $no=1; foreach($pengaduan as $p) :?>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td></td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
+                <td><?php $no++ ?></td>
+                <td><?php echo $p->id_kategori ?></td>
+                <td><?php echo $p->nik ?></td>
+                <td><?php echo $p->alamat_pelapor ?></td>
+                <td><?php echo $p->tanggal ?></td>
+                <td><?php echo $p->lokasi ?></td>
+                <td><?php echo $p->isi_laporan ?></td>
+                <td><?php echo $p->foto ?></td>
             </tr>
-           
+        </tbody>
+           <?php endforeach; ?>
     </table>
 
     <script>
@@ -35,7 +42,7 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="<?php echo base_url('lihatdetailproses')?>"
+		<a href="<?php echo base_url('lihatdetailmasuk')?>"
          href="#" class="btn btn-warning">Lihat Detail</a>
          <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow">

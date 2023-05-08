@@ -69,7 +69,7 @@ class RT extends CI_Controller {
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>');
-		  redirect('dashboard');
+		  redirect('rt');
 		}
 	}
 }

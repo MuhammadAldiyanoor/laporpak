@@ -1,13 +1,13 @@
 <?php
 
-class M_pengaduan extends CI_Model
+class M_rw extends CI_Model
 {
 
-        public function show_data()
+public function show_data()
         {
-            // return $this->db->query('SELECT * FROM pengaduan');
-            return $this->db->get('pengaduan')->result();
+            return $this->db->query('SELECT * FROM rw');
         }
+
 
         public function get_data($table){
             return $this->db->get($table);
