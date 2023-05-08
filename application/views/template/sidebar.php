@@ -88,6 +88,11 @@
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
+									<li>
+									<a href="<?php echo base_url('rt')?>">
+											<span class="sub-item">RT/RW</span>
+										</a>
+									</li>
 									<span class="sub-item">Tambah User</span>
 									<li>
 									<a href="<?php echo base_url('tambahuser')?>">
