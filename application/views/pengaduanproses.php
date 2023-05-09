@@ -19,6 +19,7 @@
                 <th>Jenis Pengaduan</th>
                 <th>Isi Laporan</th>
                 <th>Foto</th>
+                <th>aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -32,6 +33,10 @@
                 <td><?php echo $p->lokasi ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
+                <td></td>
+                <td><a href="<?php echo base_url('lihatdetailproses')?>"><button
+                                                    class="btn btn-warning btn-xs"><i class="fa fa-eye"> Detail
+                                                    </i></button></td>
             </tr>
         </tbody>
            <?php endforeach; ?>
@@ -42,8 +47,6 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="<?php echo base_url('lihatdetailmasuk')?>"
-         href="#" class="btn btn-warning">Lihat Detail</a>
          <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow">
                             </i>Kembali</button></a>

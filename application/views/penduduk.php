@@ -10,16 +10,16 @@
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Nama Pelapor</th>
                 <th>NIK</th>
-                <th>Alamat Pelapor</th>
-                <th>RT/RW</th>
-                <th>Tanggal Pengaduan</th>
-                <th>Lokasi</th>
-                <th>Jenis Pengaduan</th>
-                <th>Isi Laporan</th>
-                <th>Foto</th>
-                <th></th>
+                <th>Nama</th>
+                <th>Tempat Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Alamat</th>
+                <th>Agama</th>
+                <th>Pekerjaan</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -34,7 +34,7 @@
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
                 <td></td>
-                <td><a href="<?php echo base_url('lihatdetailselesai')?>"><button
+                <td><a href="<?php echo base_url('')?>"><button
                                                     class="btn btn-warning btn-xs"><i class="fa fa-eye"> Detail
                                                     </i></button></td>
             </tr>
@@ -47,6 +47,8 @@
         $('#example').DataTable();
     });
     </script>
+		<a href="<?php echo base_url('rt/tambahrt')?>"
+         href="#" class="btn btn-primary">Tambah</a>
          <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow">
                             </i>Kembali</button></a>

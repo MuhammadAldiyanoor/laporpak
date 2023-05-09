@@ -54,9 +54,35 @@
 							<h4 class="text-section">Components</h4>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#base">
+							<a data-toggle="collapse" href="#charts">
 								<i class="fas fa-layer-group"></i>
 								<p>Data Master</p>
+								<span class="caret"></span>
+							</a>
+							
+							<div class="collapse" id="charts">
+
+							<ul class="nav nav-collapse">
+							<a href="components/avatars.html">
+							<li>
+							<a href="<?php echo base_url('penduduk')?>">
+											<span class="sub-item">Penduduk</span>
+										</a>
+									</li>
+									<li>
+									<a href="<?php echo base_url('rt')?>">
+											<span class="sub-item">RT/RW</span>
+										</a>
+									</li>
+									</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-file"></i>
+								<p>Pengaduan</p>
 								<span class="caret"></span>
 							</a>
 							
@@ -86,11 +112,6 @@
 									<li>
 									<a href="<?php echo base_url('pengaduanselesai')?>">
 											<span class="sub-item">Pengaduan Selesai</span>
-										</a>
-									</li>
-									<li>
-									<a href="<?php echo base_url('rt')?>">
-											<span class="sub-item">RT/RW</span>
 										</a>
 									</li>
 									<span class="sub-item">Tambah User</span>

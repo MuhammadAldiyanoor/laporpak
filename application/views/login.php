@@ -51,34 +51,54 @@
 					<button type="submit" name="submit" class="btn btn-primary btn-rounded btn-login">Login</button>
 				</div>
 				<div class="login-account">
-					<span class="msg">Don't have an account yet ?</span>
-					<a href="#" id="show-signup" class="link">Sign Up</a>
+					<span class="msg"></span>
+					<a href="#" id="show-signup" class="link">Daftar</a>
 				</div>
 			</div>
 			</form>
 		</div>
 
-		<div class="container container-signup animated fadeIn">
+		<div class="container container-signup animated fadeIn" style="width: 100rem;height:52rem;">
 			<h3 class="text-center">Sign Up</h3>
 			<div class="login-form">
 				<div class="form-group form-floating-label">
 					<input  id="fullname" name="fullname" type="text" class="form-control input-border-bottom" required>
-					<label for="fullname" class="placeholder">Fullname</label>
+					<label for="fullname" class="placeholder">NIK</label>
 				</div>
 				<div class="form-group form-floating-label">
 					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Email</label>
+					<label for="email" class="placeholder">Nama</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">Tempat Lahir</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">Jenis Kelamin</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">Alamat</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">Agama</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">Pekerjaan</label>
 				</div>
 				<div class="form-group form-floating-label">
 					<input  id="passwordsignin" name="passwordsignin" type="password" class="form-control input-border-bottom" required>
-					<label for="passwordsignin" class="placeholder">Password</label>
+					<label for="passwordsignin" class="placeholder">Username</label>
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>
 				</div>
 				<div class="form-group form-floating-label">
 					<input  id="confirmpassword" name="confirmpassword" type="password" class="form-control input-border-bottom" required>
-					<label for="confirmpassword" class="placeholder">Confirm Password</label>
+					<label for="confirmpassword" class="placeholder">Password</label>
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>
