@@ -41,7 +41,7 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item active">
-						<a href="<?php echo base_url('dashboard')?>">
+						<a href="<?php echo base_url('admin/dashboard')?>">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 								<span class="badge badge-count">5</span>
@@ -65,12 +65,12 @@
 							<ul class="nav nav-collapse">
 							<a href="components/avatars.html">
 							<li>
-							<a href="<?php echo base_url('penduduk')?>">
+							<a href="<?php echo base_url('admin/penduduk')?>">
 											<span class="sub-item">Penduduk</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('rt')?>">
+									<a href="<?php echo base_url('admin/rt')?>">
 											<span class="sub-item">RT/RW</span>
 										</a>
 									</li>
@@ -95,28 +95,28 @@
 											</h6>
 										</a>
 							<li>
-							<a href="<?php echo base_url('pengaduanmasuk')?>">
+							<a href="<?php echo base_url('admin/admin/pengaduanmasuk')?>">
 											<span class="sub-item">Pengaduan Masuk</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('pengaduanproses')?>">
+									<a href="<?php echo base_url('admin/admin/pengaduanproses')?>">
 											<span class="sub-item">Pengaduan Proses</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('pengaduanditolak')?>">
+									<a href="<?php echo base_url('admin/admin/pengaduanditolak')?>">
 											<span class="sub-item">Pengaduan Ditolak</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('pengaduanselesai')?>">
+									<a href="<?php echo base_url('admin/admin/pengaduanselesai')?>">
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
 									<span class="sub-item">Tambah User</span>
 									<li>
-									<a href="<?php echo base_url('tambahuser')?>">
+									<a href="<?php echo base_url('admin/admin/tambahuser')?>">
 											<span class="sub-item">Tambah User</span>
 										</a>
 									</li>
@@ -152,12 +152,12 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="<?php echo base_url('profil')?>">
+										<a href="<?php echo base_url('admin/profil')?>">
 											<span class="sub-item">Profil</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('gantipassword')?>">
+									<a href="<?php echo base_url('admin/gantipassword')?>">
 											<span class="sub-item">Ganti Password</span>
 										</a>
 									</li>
@@ -166,7 +166,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-						<a href="<?php echo base_url('generatelaporan')?>">
+						<a href="<?php echo base_url('admin/generatelaporan')?>">
 								<i class="fas fa-table"></i>
 								<p>Hasil Laporan</p>
 								<span class="caret"></span>
@@ -187,7 +187,7 @@
 							</div> -->
 						</li>
 						<li class="nav-item">
-						<a href="<?php echo base_url('logout')?>">
+						<a href="<?php echo base_url('admin/logout')?>">
 								<i class="fas fa-map-marker-alt"></i>
 								<p>Log Out</p>
 								<span class="caret"></span>

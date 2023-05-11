@@ -7,7 +7,7 @@ class LihatDetailSelesai extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('lihatdetailselesai');
+		$this->load->view('admin/lihatdetailselesai');
 		$this->load->view('template/footer');
 	}
 }

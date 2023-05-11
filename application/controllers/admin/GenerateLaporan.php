@@ -7,7 +7,7 @@ class GenerateLaporan extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('generatelaporan');
+		$this->load->view('admin/generatelaporan');
 		$this->load->view('template/footer');
 	}
 }

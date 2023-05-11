@@ -10,7 +10,7 @@ class PengaduanProses extends CI_Controller {
 		// var_dump($data);exit;
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('pengaduanproses', $data);
+		$this->load->view('admin/pengaduanproses', $data);
 		$this->load->view('template/footer');
 	}
 }

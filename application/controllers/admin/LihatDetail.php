@@ -7,7 +7,7 @@ class LihatDetail extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('lihatdetail');
+		$this->load->view('admin/lihatdetail');
 		$this->load->view('template/footer');
 	}
 }

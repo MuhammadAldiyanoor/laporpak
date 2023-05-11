@@ -7,7 +7,7 @@ class LogOut extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('logout');
+		$this->load->view('admin/logout');
 		$this->load->view('template/footer');
 	}
 }

@@ -14,7 +14,7 @@ class RT extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('rt');
+		$this->load->view('admin/rt');
 		$this->load->view('template/footer');
 	}
 
@@ -22,7 +22,7 @@ class RT extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('tambahrt');
+		$this->load->view('admin/tambahrt');
 		$this->load->view('template/footer');
 	}
 	
@@ -61,7 +61,7 @@ class RT extends CI_Controller {
 			);
 
 			// $this->M_rt->insert_data($data2, 'rw');
-			$this->db->insert('rw', $data2);
+			$this->db->insert('admin/rw', $data2);
 
 			$this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
 			<strong>Data berhasil ditambahkan !</strong>
@@ -69,7 +69,7 @@ class RT extends CI_Controller {
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>');
-		  redirect('rt');
+		  redirect('admin/rt');
 		}
 	}
 }

@@ -10,7 +10,7 @@ class PengaduanDitolak extends CI_Controller {
 		// var_dump($data);exit;
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('pengaduanditolak', $data);
+		$this->load->view('admin/pengaduanditolak', $data);
 		$this->load->view('template/footer');
 	}
 }

@@ -7,7 +7,7 @@ class LihatDetailMasuk extends CI_Controller {
 	{
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('lihatdetailmasuk');
+		$this->load->view('admin/lihatdetailmasuk');
 		$this->load->view('template/footer');
 	}
 }

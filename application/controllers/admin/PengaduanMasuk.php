@@ -10,7 +10,7 @@ class PengaduanMasuk extends CI_Controller {
 		// var_dump($data);exit;
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('pengaduanmasuk', $data);
+		$this->load->view('admin/pengaduanmasuk', $data);
 		$this->load->view('template/footer');
 	}
 }

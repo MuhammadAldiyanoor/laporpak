@@ -10,7 +10,7 @@ class Penduduk extends CI_Controller {
 		// var_dump($data);exit;
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
-		$this->load->view('penduduk', $data);
+		$this->load->view('admin/penduduk', $data);
 		$this->load->view('template/footer');
 	}
 }
