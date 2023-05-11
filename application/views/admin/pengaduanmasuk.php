@@ -19,7 +19,7 @@
                 <th>Jenis Pengaduan</th>
                 <th>Isi Laporan</th>
                 <th>Foto</th>
-                <th></th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -34,8 +34,11 @@
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
                 <td></td>
-                <td><a href="<?php echo base_url('lihatdetailselesai')?>"><button
-                                                    class="btn btn-warning btn-xs"><i class="fa fa-eye"> Detail
+                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
+                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Diproses
+                                                    </i></button></td>
+                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
+                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Ditolak
                                                     </i></button></td>
             </tr>
         </tbody>
