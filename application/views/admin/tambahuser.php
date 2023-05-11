@@ -14,7 +14,7 @@
 	</div>
     <div class="form-group">
 		<label for="exampleInputEmail1">Password</label>
-		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Password">
+		<input type="email" class="form-control" id="exampleInputEmail1"gi aria-describedby="emailHelp" placeholder="Masukan Password">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">No.Telepon</label>
