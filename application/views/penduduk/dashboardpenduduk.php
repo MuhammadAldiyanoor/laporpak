@@ -30,7 +30,7 @@
 										</div>
 										<div class="col col-stats ml-3 ml-sm-0">
 											<div class="numbers">
-												<p class="card-category">Petugas</p>
+												<p class="card-category">Penduduk</p>
 												<h4 class="card-title">1,294</h4>
 											</div>
 										</div>

@@ -25,7 +25,7 @@
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="<?= base_url();?>assets/css/demo.css">
 </head>
-<div class="main-panel" style="margin-right:100px;">
+<div class="main-panel">
 			<div class="content">
 				<div class="page-inner">
 					<!-- end topbar -->
@@ -34,8 +34,11 @@
 					<h1 class="card-header">Tambah Pengaduan</h1>
 	<div class="card-body">
 	<form action="<?php echo base_url('landing/tambah_data_aksi')?>" method="POST">
+	<div class="form-group">
+		<label for="exampleInputEmail1">Nama</label>
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="nama">
+	</div>
     <div class="form-group">
-		<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" name="id_pengaduan">
 		<label for="exampleInputEmail1">NIK</label>
 		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="nik">
 	</div>
@@ -57,7 +60,7 @@
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Jenis Pengaduan</label>
-		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="id_kategori_pengaduan">
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="jenis_pengaduan">
 	</div>
 	<div class="form-check">
 		<input type="checkbox" class="form-check-input" id="exampleCheck1">

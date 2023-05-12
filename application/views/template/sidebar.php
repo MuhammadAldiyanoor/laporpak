@@ -95,28 +95,28 @@
 											</h6>
 										</a>
 							<li>
-							<a href="<?php echo base_url('admin/admin/pengaduanmasuk')?>">
+							<a href="<?php echo base_url('admin/pengaduanmasuk')?>">
 											<span class="sub-item">Pengaduan Masuk</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('admin/admin/pengaduanproses')?>">
+									<a href="<?php echo base_url('admin/pengaduanproses')?>">
 											<span class="sub-item">Pengaduan Proses</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('admin/admin/pengaduanditolak')?>">
+									<a href="<?php echo base_url('admin/pengaduanditolak')?>">
 											<span class="sub-item">Pengaduan Ditolak</span>
 										</a>
 									</li>
 									<li>
-									<a href="<?php echo base_url('admin/admin/pengaduanselesai')?>">
+									<a href="<?php echo base_url('admin/pengaduanselesai')?>">
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
 									<span class="sub-item">Tambah User</span>
 									<li>
-									<a href="<?php echo base_url('admin/admin/tambahuser')?>">
+									<a href="<?php echo base_url('admin/tambahuser')?>">
 											<span class="sub-item">Tambah User</span>
 										</a>
 									</li>

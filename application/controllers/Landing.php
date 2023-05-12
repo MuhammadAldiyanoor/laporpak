@@ -16,12 +16,14 @@ class Landing extends CI_Controller {
 	}
 	public function tambah_data_aksi()
 	{
+		$this->load->model('M_pengaduan');
 		$this->_rules();
 		if($this->form_validation->run() == FALSE){
 		}else{
 			$id_pengaduan	  	  = $this->input->post('id_pengaduan');
 			$id_kategori		  = $this->input->post('id_kategori');
 			$nik 	 		  	  = $this->input->post('nik');
+			$nama 	 		  	  = $this->input->post('nama');
 			$alamat_pelapor 	  = $this->input->post('alamat_pelapor');
 			$tanggal 	 		  = $this->input->post('tanggal');
 			$lokasi 	 		  = $this->input->post('lokasi');
@@ -33,6 +35,7 @@ class Landing extends CI_Controller {
 				'id_pengaduan'			=> $id_pengaduan,
 				'id_kategori'			=> $id_kategori,
 				'nik'					=> $nik,
+				'nama'					=> $nama,
 				'alamat_pelapor'		=> $alamat_pelapor,
 				'tanggal'				=> $tanggal,
 				'lokasi'				=> $lokasi,
@@ -47,7 +50,7 @@ class Landing extends CI_Controller {
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>');
-		  redirect('landing');
+		  redirect('penduduk/dashboard');
 		}
 	}
 }

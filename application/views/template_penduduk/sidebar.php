@@ -51,23 +51,15 @@
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
 							</span>
-							<h4 class="text-section">Components</h4>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#charts">
-								<i class="fas fa-layer-group"></i>
-								<p>Data Master</p>
-								<span class="caret"></span>
-							</a>
-							
+						<a href="<?php echo base_url('penduduk/tambahpengaduan')?>">
+											<span class="sub-item">Tambah Pengaduan</span>
 							<div class="collapse" id="charts">
 
 							<ul class="nav nav-collapse">
 							<a href="components/avatars.html">
 							<li>
-							<a href="<?php echo base_url('penduduk/penduduk')?>">
-											<span class="sub-item">Penduduk</span>
-										</a>
 									</li>
 								</ul>
 							</div>
@@ -77,22 +69,18 @@
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
-								<p>Profil</p>
+								<p>Proses Bar</p>
 								<span class="caret"></span>
 							</a>
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="<?php echo base_url('penduduk/profil')?>">
-											<span class="sub-item">Profil</span>
-										</a>
-									</li>
-									<li>
-									<a href="<?php echo base_url('penduduk/gantipassword')?>">
+										<a href="<?php echo base_url('penduduk/tracking')?>">
+											<span class="sub-item">tracking</span>
+										<a href="<?php echo base_url('penduduk/gantipassword')?>">
 											<span class="sub-item">Ganti Password</span>
 										</a>
 									</li>
-									
 								</ul>
 							</div>
 						</li>
