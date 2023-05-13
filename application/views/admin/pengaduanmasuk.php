@@ -10,7 +10,8 @@
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Nama Pelapor</th>
+                <th>No</th>
+                <th>Nama</th>
                 <th>NIK</th>
                 <th>Alamat Pelapor</th>
                 <th>RT/RW</th>
@@ -25,16 +26,18 @@
         <tbody>
             <?php $no=1; foreach($pengaduan as $p) :?>
             <tr>
-                <td><?php $no++ ?></td>
-                <td><?php echo $p->id_kategori ?></td>
+                <td><?php echo $no++ ?></td>
+                <td><?php echo $p->nama ?></td>
                 <td><?php echo $p->nik ?></td>
                 <td><?php echo $p->alamat_pelapor ?></td>
+                <td><?php echo $p->rt_rw ?></td>
                 <td><?php echo $p->tanggal ?></td>
                 <td><?php echo $p->lokasi ?></td>
+                <td><?php echo $p->jenis_pengaduan ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
                 <td></td>
-                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
+                <td><a href="<?php echo base_url('admin/prosesmasuk')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Diproses
                                                     </i></button></td>
                 <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button

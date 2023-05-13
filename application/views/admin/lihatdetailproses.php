@@ -14,8 +14,10 @@
                 <th>Isi Laporan</th>
                 <th>Telp</th>
                 <th>Tanggal Pengaduan</th>
-                <th>Status</th>
-                <th>Salary</th>
+                <th>Nama Petugas</th>
+                <th>tanggal diproses</th>
+                <th>jam diproses</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -24,8 +26,12 @@
                 <td>System Architect</td>
                 <td>Edinburgh</td>
                 <td></td>
+                <td></td>
+                <td></td>
                 <td>2011-04-25</td>
-                <td>$320,800</td>
+                <td><a href="<?php echo base_url('admin/pengaduanselesai')?>"><button
+                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Selesai
+                                                    </i></button></td>
             </tr>
            
     </table>
@@ -35,7 +41,7 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="<?php echo base_url('lihatdetailproses')?>"
+		<a href="<?php echo base_url('admin/lihatdetailproses')?>"
          href="#" class="btn btn-warning">Lihat Detail</a>
 		 <a href="<?php echo base_url('pengaduanproses')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow-circle-left">

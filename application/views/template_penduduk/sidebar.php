@@ -47,42 +47,19 @@
 								<span class="badge badge-count">5</span>
 							</a>
 						</li>
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-						</li>
 						<li class="nav-item">
-						<a href="<?php echo base_url('penduduk/tambahpengaduan')?>">
-											<span class="sub-item">Tambah Pengaduan</span>
-							<div class="collapse" id="charts">
-
-							<ul class="nav nav-collapse">
-							<a href="components/avatars.html">
-							<li>
-									</li>
-								</ul>
-							</div>
+							<a href="<?php echo base_url('penduduk/tambahpengaduan')?>">
+								<i class="fa fa-ellipsis-h"></i>
+								<p>Tambah Pengaduan</p>
+							</a>
 						</li>
-					
-						
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
-								<p>Proses Bar</p>
+								<p>Ganti Password</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="forms">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="<?php echo base_url('penduduk/tracking')?>">
-											<span class="sub-item">tracking</span>
-										<a href="<?php echo base_url('penduduk/gantipassword')?>">
-											<span class="sub-item">Ganti Password</span>
-										</a>
-									</li>
-								</ul>
-							</div>
+						
 						</li>
 					</ul>
 				</div>
