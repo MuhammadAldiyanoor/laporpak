@@ -54,18 +54,15 @@
 							<h4 class="text-section">Components</h4>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#charts">
-								<i class="fas fa-layer-group"></i>
+							<a data-toggle="collapse" href="#dames">
+							<i class="fas fa-layer-group"></i>
 								<p>Data Master</p>
 								<span class="caret"></span>
 							</a>
-							
-							<div class="collapse" id="charts">
-
-							<ul class="nav nav-collapse">
-							<a href="components/avatars.html">
-							<li>
-							<a href="<?php echo base_url('admin/penduduk')?>">
+							<div class="collapse" id="dames">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url('admin/penduduk')?>">
 											<span class="sub-item">Penduduk</span>
 										</a>
 									</li>
@@ -74,10 +71,12 @@
 											<span class="sub-item">RT/RW</span>
 										</a>
 									</li>
-									</li>
+									
 								</ul>
 							</div>
 						</li>
+						
+							<!-- <div class="collapse" id="charts"> -->
 					
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#base">
@@ -89,11 +88,7 @@
 							<div class="collapse" id="base">
 
 							<ul class="nav nav-collapse">
-							<a href="components/avatars.html">
-											<h6>
-											<span class="sub-item">Tanggapan</span>
-											</h6>
-										</a>
+							
 							<li>
 							<a href="<?php echo base_url('admin/pengaduanmasuk')?>">
 											<span class="sub-item">Pengaduan Masuk</span>
@@ -114,7 +109,7 @@
 											<span class="sub-item">Pengaduan Selesai</span>
 										</a>
 									</li>
-									<span class="sub-item">Tambah User</span>
+									
 									<li>
 									<a href="<?php echo base_url('admin/tambahuser')?>">
 											<span class="sub-item">Tambah User</span>
@@ -185,6 +180,13 @@
 									</li>
 								</ul>
 							</div> -->
+						</li>
+						<li class="nav-item">
+						<a href="<?php echo base_url('admin/tambahuser')?>">
+								<i class="fas fa-user"></i>
+								<p>Tambah User</p>
+								<span class="caret"></span>
+							</a>
 						</li>
 						<li class="nav-item">
 						<a href="<?php echo base_url('admin/logout')?>">
@@ -321,5 +323,37 @@
 			</div>
 		</div>
 		<!-- End Sidebar -->
+
+		<!-- Custom template | don't include it in your project! -->
+		<div class="custom-template">
+			<div class="title">Settings</div>
+			<div class="custom-content">
+				<div class="switcher">
+					<div class="switch-block">
+						<h4>Topbar</h4>
+						<div class="btnSwitch">
+							<button type="button" class="selected changeMainHeaderColor" data-color="blue"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="purple"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="green"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="orange"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="red"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Background</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+							<button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+							<button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custom-toggle">
+				<i class="flaticon-settings"></i>
+			</div>
+		</div>
+		<!-- End Custom template -->
 
 	

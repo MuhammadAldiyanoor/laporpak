@@ -53,7 +53,7 @@ $query ="INSERT INTO pengaduan_proses (`id_pengaduan_proses`, `id_user`, `id_kat
 
         }
 
-        pengaduan_selesai($id){
+        public function pengaduan_selesai($id){
 $query ="INSERT INTO pengaduan_selesai (`id_pengaduan_selesai`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file`) SELECT `id_pengaduan_proses`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan_proses` WHERE `id_pengaduan_proses` = $id";
             $this->db->query($query);
 

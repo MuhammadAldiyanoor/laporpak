@@ -49,17 +49,23 @@
 						</li>
 						<li class="nav-item">
 							<a href="<?php echo base_url('penduduk/tambahpengaduan')?>">
-								<i class="fa fa-ellipsis-h"></i>
+								<i class="fas fa-plus-square"></i>
 								<p>Tambah Pengaduan</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#forms">
+						<a href="<?php echo base_url('penduduk/pengaduan')?>">
+								<i class="fas fa-file-square"></i>
+								<p>Pengaduan</p>
+								<span class="caret"></span>
+							</a>
+						</li>
+						<li class="nav-item">
+						<a href="<?php echo base_url('penduduk/gantipassword')?>">
 								<i class="fas fa-pen-square"></i>
 								<p>Ganti Password</p>
 								<span class="caret"></span>
 							</a>
-						
 						</li>
 					</ul>
 				</div>
