@@ -8,19 +8,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
 <table id="example" class="table table-striped" style="width:100%">
+<table class="table table-bordered table-head-bg-info table-bordered-bd-info">
         <thead>
             <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>NIK</th>
-                <th>Alamat Pelapor</th>
-                <th>RT/RW</th>
-                <th>Tanggal Pengaduan</th>
-                <th>Lokasi</th>
-                <th>Jenis Pengaduan</th>
-                <th>Isi Laporan</th>
-                <th>Foto</th>
-                <th>Aksi</th>
+            <th class="text-center">No</th>
+                <th class="text-center">Nama</th>
+                <th class="text-center">NIK</th>
+                <th class="text-center">Alamat Pelapor</th>
+                <th class="text-center">RT/RW</th>
+                <th class="text-center">Tanggal Pengaduan</th>
+                <th class="text-center">Lokasi</th>
+                <th class="text-center">Jenis Pengaduan</th>
+                <th class="text-center">Isi Laporan</th>
+                <th class="text-center">Foto</th>
+                <th class="text-center">Aksi</th>
+               
             </tr>
         </thead>
         <tbody>
@@ -36,11 +38,10 @@
                 <td><?php echo $p->jenis_pengaduan ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
-                <td></td>
                 <td><a href="<?php echo base_url('admin/prosesmasuk')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Diproses
-                                                    </i></button></td>
-                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
+                                                    </i></button>
+                <a href="<?php echo base_url('lihatdetailmasuk')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Ditolak
                                                     </i></button></td>
             </tr>
