@@ -25,4 +25,40 @@ class M_pengaduan extends CI_Model
             $this->db->where($where);
             $this->db->delete($table);
         }
+
+        public function pengaduan_masuk($id){
+
+            $query = "INSERT INTO pengaduan_masuk (`id_pengaduan`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file`) SELECT `id_pengaduan`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan` WHERE `id_pengaduan` = $id";
+            $this->db->query($query);
+            
+            return  $this->db->affected_rows();
+        }
+
+        public function pengaduan_ditolak($id){
+$query ="INSERT INTO pengaduan_ditolak (`id_pengaduan_ditolak`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_ditolak`, `file`) SELECT `id_pengaduan_masuk`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan_masuk` WHERE `id_pengaduan_masuk` = $id";
+            $this->db->query($query);
+
+            $query2 = "DELETE FROM pengaduan_masuk WHERE id_pengaduan_masuk = $id";
+            $this->db->query($query2);
+            return  $this->db->affected_rows();
+        }
+
+        public function pengaduan_proses($id){
+$query ="INSERT INTO pengaduan_proses (`id_pengaduan_proses`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file`) SELECT `id_pengaduan_masuk`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan_masuk` WHERE `id_pengaduan_masuk` = $id";
+            $this->db->query($query);
+
+            $query2 = "DELETE FROM pengaduan_masuk WHERE id_pengaduan_masuk = $id";
+            $this->db->query($query2);
+            return  $this->db->affected_rows();
+
+        }
+
+        pengaduan_selesai($id){
+$query ="INSERT INTO pengaduan_selesai (`id_pengaduan_selesai`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file`) SELECT `id_pengaduan_proses`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan_proses` WHERE `id_pengaduan_proses` = $id";
+            $this->db->query($query);
+
+            $query2 = "DELETE FROM pengaduan_proses WHERE id_pengaduan_proses = $id";
+            $this->db->query($query2);
+            return  $this->db->affected_rows();
+        }
     }
