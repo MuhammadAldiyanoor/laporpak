@@ -110,11 +110,6 @@
 										</a>
 									</li>
 									
-									<li>
-									<a href="<?php echo base_url('admin/tambahuser')?>">
-											<span class="sub-item">Tambah User</span>
-										</a>
-									</li>
 									<!-- <li>
 										<a href="components/sweetalert.html">
 											<span class="sub-item">Sweet Alert</span>
@@ -325,7 +320,7 @@
 		<!-- End Sidebar -->
 
 		<!-- Custom template | don't include it in your project! -->
-		<div class="custom-template">
+		<!-- <div class="custom-template">
 			<div class="title">Settings</div>
 			<div class="custom-content">
 				<div class="switcher">
@@ -353,7 +348,7 @@
 			<div class="custom-toggle">
 				<i class="flaticon-settings"></i>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Custom template -->
 
 	

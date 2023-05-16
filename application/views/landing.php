@@ -99,8 +99,7 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="<?php echo base_url('Login') ?>" class="btn btn-primary rounded-pill py-2 px-3">Login</a>
-                        <a href="<?= base_url('penduduk/tambahpengaduan') ?>" class="btn btn-primary rounded-pill py-2 px-3">Isi Form Pengaduan</a>
+                        <a href="<?php echo base_url('Login') ?>" class="btn btn-primary rounded-pill py-6 px-6">Login</a>
                     </div>
                 </div>
             </nav>
