@@ -19,24 +19,20 @@
                 <th class="text-center">Alamat</th>
                 <th class="text-center">Agama</th>
                 <th class="text-center">Pekerjaan</th>
-                <th class="text-center">Username</th>
-                <th class="text-center">Password</th>
                 <th class="text-center">Aksi</th>
             </tr>
         </thead>
         <tbody>
-            <?php $no=1; foreach($pengaduan as $p) :?>
+            <?php $no=1; foreach($penduduk as $p) :?>
             <tr>
-                <td><?php $no++ ?></td>
-                <td><?php echo $p->id_kategori ?></td>
+                <td><?php echo $no++ ?></td>
                 <td><?php echo $p->nik ?></td>
-                <td><?php echo $p->alamat_pelapor ?></td>
-                <td><?php echo $p->tanggal ?></td>
-                <td><?php echo $p->lokasi ?></td>
-                <td><?php echo $p->isi_laporan ?></td>
-                <td><?php echo $p->foto ?></td>
-                <td></td>
-                <td></td>
+                <td><?php echo $p->nama ?></td>
+                <td><?php echo $p->tempat_lahir ?></td>
+                <td><?php echo $p->jenis_kelamin ?></td>
+                <td><?php echo $p->alamat ?></td>
+                <td><?php echo $p->agama ?></td>
+                <td><?php echo $p->pekerjaan ?></td>
                 <td><a href="<?php echo base_url('')?>"><button
                                                     class="btn btn-warning btn-xs"><i class="fa fa-eye"> Detail
                                                     </i></button></td>
@@ -50,7 +46,7 @@
         $('#example').DataTable();
     });
     </script>
-		<a href="<?php echo base_url('rt/tambahrt')?>"
+		<a href="<?php echo base_url('penduduk/tambah_penduduk')?>"
          href="#" class="btn btn-primary">Tambah</a>
          <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
                                 class="fa fa-arrow">

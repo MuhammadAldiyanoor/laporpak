@@ -81,7 +81,7 @@ class Login extends CI_Controller
                     redirect('petugas/dashboard');
                     break;
                 case 3:
-                    redirect('penduduk/dashboard');
+                    redirect('dashboard');
                     break;
                 default:
                     // Jika id_level tidak sesuai, hapus session dan redirect ke halaman login

@@ -62,7 +62,7 @@
 							<div class="collapse" id="dames">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="<?php echo base_url('admin/penduduk')?>">
+										<a href="<?php echo base_url('penduduk')?>">
 											<span class="sub-item">Penduduk</span>
 										</a>
 									</li>

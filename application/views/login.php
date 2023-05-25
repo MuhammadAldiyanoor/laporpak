@@ -58,62 +58,74 @@
 			</form>
 		</div>
 
-		<div class="container container-signup animated fadeIn" style="width: 100rem;height:52rem;">
+		<div class="container container-signup animated fadeIn" style="width: 100rem;height:65rem;">
 			<h3 class="text-center">Sign Up</h3>
-			<div class="login-form">
-				<div class="form-group form-floating-label">
-					<input  id="fullname" name="fullname" type="text" class="form-control input-border-bottom" required>
-					<label for="fullname" class="placeholder">NIK</label>
+			<div class="card-body">
+                
+                <form action="penduduk/tambah_data_aksi" method="POST">
+
+				<input  id="fullname" name="id_masyarakat" type="hidden" class="form-control input-square" required>
+				<input  id="fullname" name="id_level" type="hidden" class="form-control input-square" value="3" required>	
+
+                <div class="form-group">
+                    <label for="fullname" class="placeholder">NIK</label>
+					<input  id="fullname" name="nik" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Nama</label>
+
+                <div class="form-group">
+					<label for="text" class="placeholder">Nama</label>
+					<input  id="text" name="nama" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Tempat Lahir</label>
+
+				<div class="form-group">
+					<label for="text" class="placeholder">Tempat Lahir</label>
+					<input  id="text" name="tempat_lahir" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Jenis Kelamin</label>
+
+				<div class="form-group">
+					<label for="text" class="placeholder">Jenis Kelamin</label>
+					<input  id="text" name="jenis_kelamin" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Alamat</label>
+
+				<div class="form-group">
+					<label for="text" class="placeholder">Alamat</label>
+					<input  id="text" name="alamat" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Agama</label>
+
+				<div class="form-group">
+					<label for="text" class="placeholder">Agama</label>
+					<input  id="text" name="agama" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="email" name="email" type="email" class="form-control input-border-bottom" required>
-					<label for="email" class="placeholder">Pekerjaan</label>
+
+				<div class="form-group">
+					<label for="text" class="placeholder">Pekerjaan</label>
+					<input  id="text" name="pekerjaan" type="text" class="form-control input-square" required>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="passwordsignin" name="passwordsignin" type="password" class="form-control input-border-bottom" required>
+
+				<div class="form-group">
 					<label for="passwordsignin" class="placeholder">Username</label>
+					<input  id="passwordsignin" name="username" type="text" class="form-control input-square" required>
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>
 				</div>
-				<div class="form-group form-floating-label">
-					<input  id="confirmpassword" name="confirmpassword" type="password" class="form-control input-border-bottom" required>
+
+				<div class="form-group">
 					<label for="confirmpassword" class="placeholder">Password</label>
+					<input  id="confirmpassword" name="password" type="password" class="form-control input-square" required>
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>
 				</div>
-				<div class="row form-sub m-0">
-					<div class="custom-control custom-checkbox">
-						<input type="checkbox" class="custom-control-input" name="agree" id="agree">
-						<label class="custom-control-label" for="agree">I Agree the terms and conditions.</label>
-					</div>
+
+																				
 				</div>
-				<div class="form-action">
-					<a href="#" id="show-signin" class="btn btn-danger btn-rounded btn-login mr-3">Cancel</a>
-					<a href="#" class="btn btn-primary btn-rounded btn-login">Sign Up</a>
-				</div>
-			</div>
+								<div class="card-action" style="margin-left:29rem;">
+									<button type="submit" class="btn btn-success">Submit</button>
+									<button class="btn btn-danger">Cancel</button>
+								</div>
+                                </form>
+							</div>
 		</div>
 	</div>
 	<script src="<?php echo base_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
