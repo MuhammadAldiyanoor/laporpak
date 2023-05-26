@@ -55,10 +55,6 @@
 		<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal" name="tanggal">
 	</div>
 	<div class="form-group">
-		<label for="exampleInputPassword1">Lokasi</label>
-		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Lokasi" name="lokasi">
-	</div>
-	<div class="form-group">
 		<label for="exampleInputPassword1">Jenis Pengaduan</label>
 		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="jenis_pengaduan">
 	</div>

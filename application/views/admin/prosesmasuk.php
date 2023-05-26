@@ -8,53 +8,59 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
 <table id="example" class="table table-striped" style="width:100%">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>NIK</th>
-                <th>Alamat Pelapor</th>
-                <th>RT/RW</th>
-                <th>Tanggal Pengaduan</th>
-                <th>Lokasi</th>
-                <th>Jenis Pengaduan</th>
-                <th>Isi Laporan</th>
-                <th>Foto</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php $no=1; foreach($pengaduan as $p) :?>
-            <tr>
-                <td><?php echo $no++ ?></td>
-                <td><?php echo $p->nama ?></td>
-                <td><?php echo $p->nik ?></td>
-                <td><?php echo $p->alamat_pelapor ?></td>
-                <td><?php echo $p->rt_rw ?></td>
-                <td><?php echo $p->tanggal ?></td>
-                <td><?php echo $p->lokasi ?></td>
-                <td><?php echo $p->jenis_pengaduan ?></td>
-                <td><?php echo $p->isi_laporan ?></td>
-                <td><?php echo $p->foto ?></td>
-                <td></td>
-                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
-                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Diproses
-                                                    </i></button></td>
-                <td><a href="<?php echo base_url('lihatdetailmasuk')?>"><button
-                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Ditolak
-                                                    </i></button></td>
-            </tr>
-        </tbody>
-           <?php endforeach; ?>
-    </table>
-
-    <script>
-        $(document).ready(function () {
-        $('#example').DataTable();
-    });
-    </script>
-         <a href="<?php echo base_url('')?>"><button class="btn btn-danger btn-"><i
-                                class="fa fa-arrow">
-                            </i>Kembali</button></a>
+<div class="card">
+					<h1 class="card-header">pengaduan diproses</h1>
+	<div class="card-body">
+	<form action="<?php echo base_url('landing/tambah_data_aksi')?>" method="POST">
+	<div class="form-group">
+		<label for="exampleInputEmail1">Nama</label>
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama" name="nama">
 	</div>
-</div>
+    <div class="form-group">
+		<label for="exampleInputEmail1">NIK</label>
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan NIK" name="nik">
+	</div>
+    <div class="form-group">
+		<label for="exampleInputEmail1">Alamat Pelapor</label>
+		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Alamat" name="alamat_pelapor">
+	</div>
+	<div class="form-group">
+		<label for="exampleInputPassword1">RT/RW</label>
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan RT/RW" name="id_rw">
+	</div>
+	<div class="form-group">
+		<label for="exampleInputPassword1">Tanggal Pengaduan</label>
+		<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal" name="tanggal">
+	</div>
+	<div class="form-group">
+		<label for="exampleInputPassword1">Jenis Pengaduan</label>
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="jenis_pengaduan">
+	</div>
+    <div class="form-group">
+		<label for="exampleInputPassword1">Nama Petugas</label>
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Nama Petugas" name="nama_petugas">
+	</div>
+    <div class="form-group">
+		<label for="exampleInputPassword1">Tanggal Diproses</label>
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal Diproses" name="tanggal_diproses">
+	</div>
+    <div class="form-group">
+		<label for="exampleInputPassword1">Jam Dproses</label>
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Jam Diproses" name="jam_diproses">
+	</div>
+	<div class="form-check">
+		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <h4>Isi Laporan</h4>
+					<textarea name="isi_laporan" id="" cols="190" rows="10"></textarea>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Upload Foto</label>
+						<div class="input-group mb-3">
+							<input type="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" name="foto">
+		<div class="input-group-append">
+			<span class="input-group-text" id="basic-addon2">Browse</span>
+		</div>
+	</div>
+    <button type="submit" class="btn btn-primary">Tambah</button>
+</form>
+	</div>
+	</div>

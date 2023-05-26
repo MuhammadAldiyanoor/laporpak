@@ -41,27 +41,27 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item active">
-						<a href="<?php echo base_url('penduduk/dashboard')?>">
+						<a href="<?php echo base_url('dashboard')?>">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 								<span class="badge badge-count">5</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url('penduduk/tambahpengaduan')?>">
+							<a href="<?php echo base_url('tambahpengaduan')?>">
 								<i class="fas fa-plus-square"></i>
 								<p>Tambah Pengaduan</p>
 							</a>
 						</li>
 						<li class="nav-item">
-						<a href="<?php echo base_url('penduduk/pengaduan')?>">
+						<a href="<?php echo base_url('pengaduan')?>">
 								<i class="fas fa-file-square"></i>
 								<p>Pengaduan</p>
 								<span class="caret"></span>
 							</a>
 						</li>
 						<li class="nav-item">
-						<a href="<?php echo base_url('penduduk/gantipassword')?>">
+						<a href="<?php echo base_url('gantipassword')?>">
 								<i class="fas fa-pen-square"></i>
 								<p>Ganti Password</p>
 								<span class="caret"></span>

@@ -3,7 +3,7 @@
 				<div class="page-inner">
 <div class="card">
 				<div class="card-header">
-				    <div class="card-title">Form Control Styles</div>
+				    <div class="card-title">Tambah Data Penduduk</div>
 				</div>
 
 				<div class="card-body">
@@ -67,7 +67,7 @@
 				</div>
 								<div class="card-action">
 									<button type="submit" class="btn btn-success">Submit</button>
-									<button class="btn btn-danger">Cancel</button>
+									<button type="submit" class="btn btn-danger">Cancel</button>
 								</div>
                                 </form>
 							</div>

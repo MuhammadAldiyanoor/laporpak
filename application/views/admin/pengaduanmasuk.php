@@ -17,7 +17,6 @@
                 <th class="text-center">Alamat Pelapor</th>
                 <th class="text-center">RT/RW</th>
                 <th class="text-center">Tanggal Pengaduan</th>
-                <th class="text-center">Lokasi</th>
                 <th class="text-center">Jenis Pengaduan</th>
                 <th class="text-center">Isi Laporan</th>
                 <th class="text-center">Foto</th>
@@ -34,7 +33,6 @@
                 <td><?php echo $p->alamat_pelapor ?></td>
                 <td><?php echo $p->rt_rw ?></td>
                 <td><?php echo $p->tanggal ?></td>
-                <td><?php echo $p->lokasi ?></td>
                 <td><?php echo $p->jenis_pengaduan ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>

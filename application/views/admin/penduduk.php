@@ -34,7 +34,7 @@
                 <td><?php echo $p->agama ?></td>
                 <td><?php echo $p->pekerjaan ?></td>
                 <td><a href="<?php echo base_url('')?>"><button
-                                                    class="btn btn-warning btn-xs"><i class="fa fa-eye"> Detail
+                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Detail
                                                     </i></button></td>
             </tr>
         </tbody>
