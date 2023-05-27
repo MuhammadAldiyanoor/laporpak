@@ -33,7 +33,7 @@
 					<div class="card">
 					<h1 class="card-header">Tambah Pengaduan</h1>
 	<div class="card-body">
-	<form action="<?php echo base_url('landing/tambah_data_aksi')?>" method="POST">
+	<form action="<?php echo base_url('tambah_pengaduan/tambah_data_aksi')?>" method="POST">
 	<div class="form-group">
 		<label for="exampleInputEmail1">Nama</label>
 		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama" name="nama">
@@ -48,15 +48,20 @@
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">RT/RW</label>
-		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan RT/RW" name="id_rw">
+		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan RT/RW" name="rt_rw">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Tanggal Pengaduan</label>
 		<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Masukan Tanggal" name="tanggal">
 	</div>
 	<div class="form-group">
-		<label for="exampleInputPassword1">Jenis Pengaduan</label>
-		<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pilih" name="jenis_pengaduan">
+		<label for="squareSelect">Jenis Pengaduan</label>
+		<select class="form-control" id="exampleInputPassword1" name="id_kategori">
+			<option selected disabled>Pilih Pengaduan</option>
+			<?php foreach($kategori as $k) {?>
+			<option value="<?= $k->id_kategori?>"><?= $k->nama?></option>
+			<?php }?>
+		</select>
 	</div>
 	<div class="form-check">
 		<input type="checkbox" class="form-check-input" id="exampleCheck1">

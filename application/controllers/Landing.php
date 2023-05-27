@@ -9,9 +9,9 @@ class Landing extends CI_Controller {
 	}
 	public function _rules()
 	{
-		$this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto','required');
-		$this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto','required');
-		$this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto','required');
+		// $this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto','required');
+		// $this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto','required');
+		$this->form_validation->set_rules('id_pengaduan','id_kategori','nik','alamat_pelapor','tanggal','isi_laporan','foto', 'rt_rw', 'jenis_pengaduan','required');
 		// $this->form_validation->set_rules('id_komoditas','id_komoditas','required');
 	}
 	public function tambah_data_aksi()
@@ -28,7 +28,7 @@ class Landing extends CI_Controller {
 			$tanggal 	 		  = $this->input->post('tanggal');
 			$isi_laporan	 	  = $this->input->post('isi_laporan');
 			$foto	 		  	  = $this->input->post('foto');
-
+			$rt_rw				  = $this->input->post('rt_rw');
 
 			$data = array(
 				'id_pengaduan'			=> $id_pengaduan,
@@ -39,6 +39,7 @@ class Landing extends CI_Controller {
 				'tanggal'				=> $tanggal,
 				'isi_laporan'			=> $isi_laporan,
 				'foto'					=> $foto,
+				'rt_rw'					=> $rt_rw,
 			);
 
 			$this->M_pengaduan->insert_data($data, 'pengaduan');

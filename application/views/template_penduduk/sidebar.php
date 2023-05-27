@@ -55,16 +55,16 @@
 						</li>
 						<li class="nav-item">
 						<a href="<?php echo base_url('pengaduan')?>">
-								<i class="fas fa-file-square"></i>
+								<i class="fas fa-file"></i>
 								<p>Pengaduan</p>
-								<span class="caret"></span>
+								<span class=""></span>
 							</a>
 						</li>
 						<li class="nav-item">
 						<a href="<?php echo base_url('gantipassword')?>">
 								<i class="fas fa-pen-square"></i>
 								<p>Ganti Password</p>
-								<span class="caret"></span>
+								<span class=""></span>
 							</a>
 						</li>
 					</ul>

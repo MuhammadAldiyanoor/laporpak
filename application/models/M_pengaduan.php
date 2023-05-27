@@ -61,4 +61,9 @@ $query ="INSERT INTO pengaduan_selesai (`id_pengaduan_selesai`, `id_user`, `id_k
             $this->db->query($query2);
             return  $this->db->affected_rows();
         }
+
+        public function jenis_pengaduan()
+            {
+                return $this->db->get('kategori')->result();
+            }
     }

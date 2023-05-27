@@ -10,28 +10,15 @@
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Nama Pelapor</th>
-                <th>NIK</th>
-                <th>Alamat Pelapor</th>
-                <th>RT/RW</th>
-                <th>Tanggal Pengaduan</th>
-                <th>Lokasi</th>
-                <th>Jenis Pengaduan</th>
-                <th>Isi Laporan</th>
-                <th>Foto</th>
+                <th>RT</th>
+                <th>RW</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
+                <td>03</td>
+                <td>05</td>
+            
             </tr>
            
     </table>

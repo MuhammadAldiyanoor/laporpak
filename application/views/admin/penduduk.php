@@ -35,6 +35,9 @@
                 <td><?php echo $p->pekerjaan ?></td>
                 <td><a href="<?php echo base_url('')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Detail
+                                                    </i></button>
+                <a href="<?php echo base_url('lihatdetailmasuk')?>"><button
+                                                    class="btn btn-primary btn-xs"><i class="fa fa-eye"> Hapus
                                                     </i></button></td>
             </tr>
         </tbody>
