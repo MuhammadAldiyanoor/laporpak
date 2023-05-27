@@ -55,7 +55,7 @@ class Tambahpengaduan extends CI_Controller {
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>');
-		  redirect('penduduk/dashboard');
+		  redirect('dashboard');
 		}
 	}
 }

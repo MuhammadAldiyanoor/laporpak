@@ -5,8 +5,23 @@ class M_pengaduan extends CI_Model
 
         public function show_data()
         {
-            // return $this->db->query('SELECT * FROM pengaduan');
-            return $this->db->get('pengaduan')->result();
+
+            $this->db->select('id_pengaduan, id_user, nama, nik, alamat_pelapor, rt_rw, tanggal, isi_laporan, file, foto, nama_kategori');
+            $this->db->from('pengaduan');
+            $this->db->join('kategori', 'pengaduan.id_kategori = kategori.id_kategori');
+            // $this->db->get();
+            
+            $query = $this->db->get();
+            return $query;
+        }
+
+        public function show_kategori()
+        {
+            $this->db->select('nama_kategori');
+            $this->db->from('kategori');
+            $query = $this->db->get();
+
+            return $query;
         }
 
         public function get_data($table){

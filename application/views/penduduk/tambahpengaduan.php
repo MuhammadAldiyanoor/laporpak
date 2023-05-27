@@ -33,7 +33,7 @@
 					<div class="card">
 					<h1 class="card-header">Tambah Pengaduan</h1>
 	<div class="card-body">
-	<form action="<?php echo base_url('tambah_pengaduan/tambah_data_aksi')?>" method="POST">
+	<form action="<?php echo base_url('tambahpengaduan/tambah_data_aksi')?>" method="POST">
 	<div class="form-group">
 		<label for="exampleInputEmail1">Nama</label>
 		<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama" name="nama">
@@ -59,7 +59,7 @@
 		<select class="form-control" id="exampleInputPassword1" name="id_kategori">
 			<option selected disabled>Pilih Pengaduan</option>
 			<?php foreach($kategori as $k) {?>
-			<option value="<?= $k->id_kategori?>"><?= $k->nama?></option>
+			<option value="<?= $k->id_kategori?>"><?= $k->nama_kategori?></option>
 			<?php }?>
 		</select>
 	</div>
