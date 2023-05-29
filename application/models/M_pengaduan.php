@@ -6,9 +6,21 @@ class M_pengaduan extends CI_Model
         public function show_data()
         {
 
-            $this->db->select('id_pengaduan, id_user, nama, nik, alamat_pelapor, rt_rw, tanggal, isi_laporan, file, foto, nama_kategori');
-            $this->db->from('pengaduan');
-            $this->db->join('kategori', 'pengaduan.id_kategori = kategori.id_kategori');
+            $this->db->select('id_pengaduan_masuk, id_user, nama, nik, alamat_pelapor, rt_rw, tanggal, isi_laporan, file, foto, nama_kategori');
+            $this->db->from('pengaduan_masuk');
+            $this->db->join('kategori', 'pengaduan_masuk.id_kategori = kategori.id_kategori');
+            // $this->db->get();
+            
+            $query = $this->db->get();
+            return $query;
+        }
+
+        public function show_data_proses()
+        {
+
+            $this->db->select('id_pengaduan_proses, id_user, nama, nik, alamat_pelapor, rt_rw, tanggal, isi_laporan, file, foto, nama_kategori');
+            $this->db->from('pengaduan_proses');
+            $this->db->join('kategori', 'pengaduan_proses.id_kategori = kategori.id_kategori');
             // $this->db->get();
             
             $query = $this->db->get();

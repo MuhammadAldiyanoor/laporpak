@@ -50,7 +50,7 @@
 
 				<div class="form-group">
 					<label for="passwordsignin" class="placeholder">Username</label>
-					<input  id="passwordsignin" name="username" type="text" class="form-control input-square" required>
+					<input  id="passwordsignin" name="username" type="text" class="form-control input-square" >
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>
@@ -58,7 +58,7 @@
 
 				<div class="form-group">
 					<label for="confirmpassword" class="placeholder">Password</label>
-					<input  id="confirmpassword" name="password" type="password" class="form-control input-square" required>
+					<input  id="confirmpassword" name="password" type="password" class="form-control input-square" >
 					<div class="show-password">
 						<i class="flaticon-interface"></i>
 					</div>

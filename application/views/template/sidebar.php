@@ -159,7 +159,7 @@
 						<a href="<?php echo base_url('admin/generatelaporan')?>">
 								<i class="fas fa-table"></i>
 								<p>Hasil Laporan</p>
-								<span class="caret"></span>
+								<span class=""></span>
 							</a>
 							<!-- <div class="collapse" id="tables">
 								<ul class="nav nav-collapse">
@@ -180,14 +180,14 @@
 						<a href="<?php echo base_url('admin/tambahuser')?>">
 								<i class="fas fa-user"></i>
 								<p>Tambah User</p>
-								<span class="caret"></span>
+								<span class=""></span>
 							</a>
 						</li>
 						<li class="nav-item">
 						<a href="<?php echo base_url('admin/logout')?>">
 								<i class="fas fa-map-marker-alt"></i>
 								<p>Log Out</p>
-								<span class="caret"></span>
+								<span class=""></span>
 							</a>
 							<!-- <div class="collapse" id="maps">
 								<ul class="nav nav-collapse">

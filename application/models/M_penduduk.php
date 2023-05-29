@@ -26,6 +26,20 @@ class M_penduduk extends CI_Model
             $this->db->delete($table);
         }
 
+        public function cek_penduduk($nik)
+    {
+        $this->db->select('*');
+        $this->db->from('masyarakat');
+        $this->db->where("nik = '$nik'");
+        $query = $this->db->get();
+        $row = $query->row();
+        if ($query->num_rows > 0){
+             return $row->nik; 
+        }else{
+             return "";
+        }
+    }
+
         public function pengaduan_masuk($id){
 
             $query = "INSERT INTO pengaduan_masuk (`id_pengaduan`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file`) SELECT `id_pengaduan`, `id_user`, `id_kategori`, `nik`, `nama`, `rt_rw`, `alamat_pelapor`, `tanggal`, `lokasi`, `jenis_pengaduan`, `isi_laporan`, `foto`, `id_petugas`, `tanggal_diproses`, `file` FROM `pengaduan` WHERE `id_pengaduan` = $id";

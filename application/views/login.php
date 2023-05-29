@@ -62,71 +62,76 @@
 			<h3 class="text-center">Sign Up</h3>
 			<div class="card-body">
                 
-                <form action="penduduk/tambah_data_aksi" method="POST">
+			<form action="penduduk/tambah_data_aksi" method="POST">
+    <input name="id_masyarakat" type="hidden" class="form-control input-square" required>
+    <input name="id_level" type="hidden" class="form-control input-square" value="3" required>
 
-				<input  id="fullname" name="id_masyarakat" type="hidden" class="form-control input-square" required>
-				<input  id="fullname" name="id_level" type="hidden" class="form-control input-square" value="3" required>	
+    <div class="form-group">
+        <label for="fullname" class="placeholder">NIK</label>
+        <input name="nik" type="text" class="form-control input-square" required>
+    </div>
 
-                <div class="form-group">
-                    <label for="fullname" class="placeholder">NIK</label>
-					<input  id="fullname" name="nik" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Nama</label>
+        <input name="nama" type="text" class="form-control input-square" required>
+    </div>
 
-                <div class="form-group">
-					<label for="text" class="placeholder">Nama</label>
-					<input  id="text" name="nama" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Tempat Lahir</label>
+        <input name="tempat_lahir" type="text" class="form-control input-square" required>
+    </div>
 
-				<div class="form-group">
-					<label for="text" class="placeholder">Tempat Lahir</label>
-					<input  id="text" name="tempat_lahir" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Jenis Kelamin</label>
+        <input name="jenis_kelamin" type="text" class="form-control input-square" required>
+    </div>
 
-				<div class="form-group">
-					<label for="text" class="placeholder">Jenis Kelamin</label>
-					<input  id="text" name="jenis_kelamin" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Alamat</label>
+        <input name="alamat" type="text" class="form-control input-square" required>
+    </div>
 
-				<div class="form-group">
-					<label for="text" class="placeholder">Alamat</label>
-					<input  id="text" name="alamat" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Agama</label>
+        <input name="agama" type="text" class="form-control input-square" required>
+    </div>
 
-				<div class="form-group">
-					<label for="text" class="placeholder">Agama</label>
-					<input  id="text" name="agama" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="text" class="placeholder">Pekerjaan</label>
+        <input name="pekerjaan" type="text" class="form-control input-square" required>
+    </div>
 
-				<div class="form-group">
-					<label for="text" class="placeholder">Pekerjaan</label>
-					<input  id="text" name="pekerjaan" type="text" class="form-control input-square" required>
-				</div>
+    <div class="form-group">
+        <label for="passwordsignin" class="placeholder">Username</label>
+        <input name="username" type="text" class="form-control input-square" required>
+        <div class="show-password">
+            <i class="flaticon-interface"></i>
+        </div>
+    </div>
 
-				<div class="form-group">
-					<label for="passwordsignin" class="placeholder">Username</label>
-					<input  id="passwordsignin" name="username" type="text" class="form-control input-square" required>
-					<div class="show-password">
-						<i class="flaticon-interface"></i>
-					</div>
-				</div>
+    <div class="form-group">
+        <label for="confirmpassword" class="placeholder">Password</label>
+        <input name="password" type="password" class="form-control input-square" required>
+        <div class="show-password">
+            <i class="flaticon-interface"></i>
+        </div>
+    </div>
 
-				<div class="form-group">
-					<label for="confirmpassword" class="placeholder">Password</label>
-					<input  id="confirmpassword" name="password" type="password" class="form-control input-square" required>
-					<div class="show-password">
-						<i class="flaticon-interface"></i>
-					</div>
-				</div>
-
-																				
-				</div>
-								<div class="card-action" style="margin-left:29rem;">
-									<button type="submit" class="btn btn-success">Submit</button>
-									<button class="btn btn-danger">Cancel</button>
-								</div>
-                                </form>
-							</div>
-		</div>
+    <div class="card-action" style="margin-left: 29rem;">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button class="btn btn-danger">Cancel</button>
+    </div>
+    
+    <?php if ($this->session->flashdata('pesan')) : ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong><?= $this->session->flashdata('pesan'); ?></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php endif; ?>
+</form>
+	</div>
 	</div>
 	<script src="<?php echo base_url('assets/js/core/jquery.3.2.1.min.js')?>"></script>
 	<script src="<?php echo base_url('assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')?>"></script>

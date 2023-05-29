@@ -47,6 +47,20 @@ class M_akun extends CI_Model
     }
     }
 
+    public function cek_penduduk($nik)
+    {
+        $this->db->select('*');
+        $this->db->from('masyarakat');
+        $this->db->where("nik = '$nik'");
+        $query = $this->db->get();
+        $row = $query->row();
+        if ($query->num_rows > 0){
+             return $row->nik; 
+        }else{
+             return "";
+        }
+    }
+
     public function insert_data($data, $table)
     {
        ($this->db->insert($table, $data));

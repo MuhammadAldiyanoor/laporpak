@@ -17,12 +17,8 @@
                 <th class="text-center">Alamat Pelapor</th>
                 <th class="text-center">RT/RW</th>
                 <th class="text-center">Tanggal Pengaduan</th>
-                <th class="text-center">Jenis Pengaduan</th>
                 <th class="text-center">Isi Laporan</th>
                 <th class="text-center">Foto</th>
-                <th class="text-center">Nama Petugas</th>
-                <th class="text-center">Tanggal diproses</th>
-                <th class="text-center">Jam diproses</th>
                 <th class="text-center">Aksi</th>
                
             </tr>
@@ -36,11 +32,7 @@
                 <td><?php echo $p->alamat_pelapor ?></td>
                 <td><?php echo $p->rt_rw ?></td>
                 <td><?php echo $p->tanggal ?></td>
-                <td><?php echo $p->jenis_pengaduan ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
-                <td><?php echo $p->foto ?></td>
-                <td><?php echo $p->foto ?></td>
-                <td><?php echo $p->foto ?></td>
                 <td><?php echo $p->foto ?></td>
                 <td><a href="<?php echo base_url('admin/pengaduanselesai')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Simpan

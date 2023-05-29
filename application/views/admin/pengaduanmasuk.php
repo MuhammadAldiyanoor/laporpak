@@ -36,7 +36,7 @@
                 <td><?php echo $p->nama_kategori ?></td>
                 <td><?php echo $p->isi_laporan ?></td>
                 <td><?php echo $p->foto ?></td>
-                <td><a href="<?php echo base_url('admin/prosesmasuk')?>"><button
+                <td><a href="<?php echo site_url('admin/pengaduanmasuk/process_transaksi')?>"><button
                                                     class="btn btn-primary btn-xs"><i class="fa fa-eye"> Diproses
                                                     </i></button>
                 <a href="<?php echo base_url('lihatdetailmasuk')?>"><button
